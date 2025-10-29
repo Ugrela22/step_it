@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+venv/
+.env.local
+
+# VS Code
+.vscode/
+
+# Editor backups
+*.swp
+*.swo
+
+# Byte-compiled / distribution
+build/
+dist/
+
+# OS files
+Thumbs.db
+.DS_Store
