@@ -1,0 +1,44 @@
+
+chess_players = [
+  {'id': 19, 'name': 'Jobava', 'country': 'Georgia', 'rating': 2588, 'age': 41},
+  {'id': 28, 'name': 'Caruana', 'country': 'USA', 'rating': 2781, 'age': 32},
+  {'id': 35, 'name': 'Giri', 'country': 'Netherlands', 'rating': 2771, 'age': 30},
+  {'id': 84, 'name': 'Carlsen', 'country': 'Norway', 'rating': 2864, 'age': 34},
+  {'id': 118, 'name': 'Ding', 'country': 'China', 'rating': 2799, 'age': 32},
+  {'id': 139, 'name': 'Karjakin', 'country': 'Russia', 'rating': 2747, 'age': 35},
+  {'id': 258, 'name': 'Duda', 'country': 'Poland', 'rating': 2731, 'age': 31},
+  {'id': 301, 'name': 'Vachier-Lagrave', 'country': 'France', 'rating': 2737, 'age': 34},
+  {'id': 403, 'name': 'Nakamura', 'country': 'USA', 'rating': 2768, 'age': 36},
+]
+
+
+new_players = [
+  {'id': 568, 'name': 'Kasparov', 'country': 'Russia', 'rating': 2705, 'age': 56},
+  {'id': 189, 'name': 'Karpov', 'country': 'Russia', 'rating': 2698, 'age': 59},
+]
+
+
+from for_12 import create_json_file,write_json_file,read_json_file,add_player,update_json_file
+
+file_path = create_json_file('homeworks/jsons', 'chess_players')
+
+write_json_file(file_path, chess_players)
+
+
+file_content = read_json_file(file_path)
+for player in file_content:
+    print(player, ",")
+
+for players in new_players:
+    add_player(file_path, players)
+
+update_json_file(file_path)
+
+
+
+
+
+
+
+
+
