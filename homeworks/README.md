@@ -2,7 +2,7 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Learning Progress](https://img.shields.io/badge/progress-18%20assignments-brightgreen.svg)](#assignments-overview)
+[![Learning Progress](https://img.shields.io/badge/progress-17%20assignments-brightgreen.svg)](#assignments-overview)
 
 This repository showcases my comprehensive Python learning journey at Step IT Academy. Each homework assignment (`davaleba` - Georgian for "assignment") demonstrates progressive skill development from basic operations to advanced object-oriented programming concepts.
 
@@ -11,7 +11,7 @@ This repository showcases my comprehensive Python learning journey at Step IT Ac
 ## 📚 Assignments Overview
 
 ### 📊 Learning Path Statistics
-- **Total Assignments**: 18 completed
+- **Total Assignments**: 17 completed
 - **Programming Concepts Covered**: 15+ core concepts
 - **Lines of Code**: 1,500+ lines
 - **Languages Used**: Python (Primary), Georgian comments
@@ -60,8 +60,8 @@ homeworks/
 ├── 📝 davaleba_8.py                # Functions & algorithms
 ├── 📝 davaleba_9.py                # Advanced functions & recursion
 ├── 📝 davaleba_10.py               # Functional programming concepts
-├── 📝 davaleba_17.py               # Object-oriented programming
-├── 📝 davaleba_18.py               # Advanced OOP & magic methods
+├── 📝 davaleba_16.py               # Object-oriented programming
+├── 📝 davaleba_17.py               # Advanced OOP & magic methods
 ├── 📁 davaleba_12/                 # JSON file operations module
 │   ├── 📝 davaleba_12.py          # Chess players data management
 │   └── 📝 for_12.py               # JSON utilities module
@@ -94,14 +94,14 @@ homeworks/
 | **davaleba_9** | Functions, recursion, global/local scope | ⭐⭐⭐⭐ | Function design, recursive thinking |
 | **davaleba_10** | Functional programming paradigms | ⭐⭐⭐⭐ | Lambda functions, higher-order functions |
 
-### **🔴 Advanced Assignments (11-18)**
+### **🔴 Advanced Assignments (11-17)**
 
 | Assignment | Key Concepts | Complexity | Skills Developed |
 |------------|--------------|------------|------------------|
 | **davaleba_12** | JSON file operations, data persistence | ⭐⭐⭐⭐⭐ | File I/O, data serialization, CRUD operations |
 | **davaleba_13** | CSV file operations, data analysis | ⭐⭐⭐⭐⭐ | Structured data handling, statistical analysis |
-| **davaleba_17** | OOP fundamentals, class design | ⭐⭐⭐⭐⭐ | Encapsulation, inheritance, class variables |
-| **davaleba_18** | Advanced OOP, magic methods | ⭐⭐⭐⭐⭐ | Operator overloading, object protocols |
+| **davaleba_16** | OOP fundamentals, class design | ⭐⭐⭐⭐⭐ | Encapsulation, inheritance, class variables |
+| **davaleba_17** | Advanced OOP, magic methods | ⭐⭐⭐⭐⭐ | Operator overloading, object protocols |
 
 ---
 
@@ -121,13 +121,13 @@ homeworks/
   - Formatted data presentation with proper alignment
 
 #### 🎨 **Object-Oriented Design Patterns**
-- **Car Management System** (Assignment 17): Progressive OOP implementation
+- **Car Management System** (Assignment 16): Progressive OOP implementation
   - Basic class structure and methods
   - Class variables and instance tracking
   - Inheritance with ElectricCar subclass
   - Error handling and data validation
 
-- **Advanced OOP Concepts** (Assignment 18): Magic method implementations
+- **Advanced OOP Concepts** (Assignment 17): Magic method implementations
   - Vector addition with `__add__` operator overloading
   - Book comparison with `__eq__` equality checks
   - Custom object creation with `__new__` method
@@ -172,7 +172,7 @@ Week 5-6:  Data Structures & String Processing       [davaleba_5-6]
 Week 7-8:  Advanced Data Operations                  [davaleba_7-8]
 Week 9-10: Function Programming & Recursion          [davaleba_9-10]
 Week 11:   File Operations & Data Persistence        [davaleba_12-13]
-Week 12:   Object-Oriented Programming               [davaleba_17-18]
+Week 12:   Object-Oriented Programming               [davaleba_16-17]
 ```
 
 ### **Code Quality Metrics:**
@@ -220,8 +220,8 @@ Week 12:   Object-Oriented Programming               [davaleba_17-18]
 | ✅ | davaleba_10 | Functional Programming | October 2025 |
 | ✅ | davaleba_12 | JSON Operations | October 2025 |
 | ✅ | davaleba_13 | CSV Operations | October 2025 |
-| ✅ | davaleba_17 | OOP Basics | November 2025 |
-| ✅ | davaleba_18 | Advanced OOP | November 2025 |
+| ✅ | davaleba_16 | OOP Basics | November 2025 |
+| ✅ | davaleba_17 | Advanced OOP | November 2025 |
 
 ---
 
@@ -259,7 +259,7 @@ Week 12:   Object-Oriented Programming               [davaleba_17-18]
 This repository represents a comprehensive journey through Python programming fundamentals. Each assignment builds upon previous concepts, creating a solid foundation for advanced programming challenges.
 
 **Repository Statistics:**
-- 📊 18 Completed Assignments
+- 📊 17 Completed Assignments
 - 🔥 1,500+ Lines of Code  
 - 📈 Progressive Difficulty Curve
 - 🎯 Real-World Problem Solving
