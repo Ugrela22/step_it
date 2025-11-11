@@ -1,123 +1,91 @@
-#1
+#1 
 
+class Vector:
 
-
-class Car:
-
-    def __init__(self, brand, model, creation_year):
-        self.brand = brand
-        self.model = model
-        self.creation_year = creation_year
-
+    def __init__(self, x, y):
+        self.x = x 
+        self.y = y
     
-    def car_info(self):
-        print(f"{"="*25}\nCar Brand: {self.brand}\n{"="*25}\nModel: {self.model}\n{"="*25}\nCreation Year: {self.creation_year}\n{"="*25}")
+    def __add__(self, other):
+        return Vector(self.x + other.x, self.y + other.y)
+    
+    def __str__(self):
+        return f"({self.x}, {self.y})"
+        
 
 
+vec1 = Vector(6, 4)
+vec2 = Vector(6, 7)
+vec3 = vec1.__add__(vec2)     
 
-car1 = Car(brand= "Audi", model = "R8", creation_year=2025)
-
-car1.car_info()
+print(vec3)
 
 #2
 
-class Car:
+class Book:
 
-    def __init__(self, brand, model, creation_year):
-        self.brand = brand
-        self.model = model
-        self.creation_year = creation_year
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
 
     
-    def car_info(self):
-        print(f"{"="*25}\nCar Brand: {self.brand}\n{"="*25}\nModel: {self.model}\n{"="*25}\nCreation Year: {self.creation_year}\n{"="*25}")
+    def __eq__(self, value):
+        return True if self.title == value.title and self.author == value.author else False
+    
 
-        Car.car_age(car1)
+book1 = Book('1984', 'George Orwell')
+book2 = Book('1984', 'George Orwell')
+book3 = Book('Brave New World', 'Aldous Huxley')
 
-    def car_age(self):
-        today = 2025
-
-        try:
-            print(f"Car is {today - self.creation_year} years old\n{"="*25}")
-        except TypeError:
-            print("Creation year shoud be always a number!!")
-
-
-
-car1 = Car(brand= "Audi", model = "R8", creation_year = 2015)
-
-car1.car_info()
+print(book1.__eq__(book2))
+print(book1.__eq__(book3))
 
 #3
 
-class ElectricCar(Car):
-
-    def __init__(self, brand, model, creation_year, battery_life):
-        super().__init__(brand, model, creation_year)
-        self.battery_life = battery_life
-
-    
-    def battery_info(self):
-        print(f"ამ მანქანის ბატარეის ხანგრძლივობა არის {self.battery_life} საათი")
-
-    
-
-ect_car1 = ElectricCar("Tesla", "ModelX", 2021, 100)
-
-ect_car1.battery_info()
-
-#4
-
+import sys
 
 class Car:
 
-    number_of_cars = 0
-
-    def __init__(self, brand, model, creation_year):
-        self.brand = brand
-        self.model = model
-        self.creation_year = creation_year
-        Car.number_of_cars += 1
-
+    def __new__(cls, *args, **kwargs):
+        instance = super().__new__(cls)
+        return instance
     
-    def car_info(self):
-        print(f"{"="*25}\nCar Brand: {self.brand}\n{"="*25}\nModel: {self.model}\n{"="*25}\nCreation Year: {self.creation_year}\n{"="*25}")
+    def __init__(self, brand, model, year):
+        self.set_brand(brand)
+        self.set_model(model)
+        self.set_year(year)
 
+    def set_brand(self, new_brand):
+        self.brand = new_brand if type(new_brand) == (str) and new_brand != "" else "Wrong type of input"
+    
+    def set_model(self, new_model):
+        self.model = new_model if type(new_model) == (str) and new_model != "" else "Wrong type of input"
         
+    def set_year(self, new_year):
+        
+        self.year = new_year if type(new_year) == (int) and new_year in range(1850, 2026) else "Wrong type of input"
+        
+        
+    def get_brand(self):
+        return self.brand
+    def get_model(self):
+        return self.model
+    def get_year(self):
+        return self.year
+    
+    def __str__(self):
+        return f"{self.brand}, {self.model}, {self.year}"
+
+car1 = Car("Nissan", "Skyline", 2025)
+
+print(car1)
 
 
-
-
-car1 = Car(brand= "Audi", model = "R8", creation_year = 2015)
-car2 = Car(brand= "Porsche", model = "911", creation_year = 2015)
-car1.car_info()
-
-#5 
-
-class Car:
-
-    number_of_cars = 0
-
-    def __init__(self, brand, model, creation_year):
-        self.brand = brand
-        self.model = model
-        self.creation_year = creation_year
-        Car.number_of_cars += 1
 
     
-    def car_info(self):
-        print(f"{"="*25}\nCar Brand: {self.brand}\n{"="*25}\nModel: {self.model}\n{"="*25}\nCreation Year: {self.creation_year}\n{"="*25}")
-
-    def total_cars(self):
-        print(f"Total Number Of Cars: {self.number_of_cars}")
-
-
-
-car1 = Car(brand= "Audi", model = "R8", creation_year = 2015)
-car2 = Car(brand= "Porsche", model = "911", creation_year = 2015)
-
-car1.total_cars()
 
 
 
         
+        
+
